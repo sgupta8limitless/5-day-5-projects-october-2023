@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* main css  */
+
+.main
+{
+    height: 90vh;
+    width: 100%;
+    background-color: #2e2e2e;
+    padding: 0px 12%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header 
+{
+    width: 100%;
+    padding: 20px 0px;
+    /* background-color: red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 12%;
+    height: 50px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+}
+
+.logo-img
+{
+    width: 100%;
+}
+
+
+.socials
+{
+    width: 22%;
+    height: 50px;
+    /* background-color: blue; */
+}
+
+.social-icons
+{
+    width: 100%;
+    height: 50px;
+    /* background-color: green; */
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    color: white;
+}
+
+.btn
+{
+    padding: 12px 20px;
+    background-color: #e56f14;
+    color: white;
+    border: 1px solid #e56f14;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'poppins';
+}
+
+/* main content css  */
+
+.main-content
+{
+    width: 100%;
+    padding: 30px 0px;
+    /* background-color: green; */
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.intro
+{
+    width: 55%;
+    padding: 20px;
+    /* background-color: red; */
+    font-family: 'poppins';
+    color: white;
+}
+
+.name
+{
+    font-size: 90px;
+    color: #e56f14;
+}
+
+.role 
+{
+    font-size: 20px;
+}
+
+.intro-text 
+{
+    margin-top: 20px;
+}
+
+.ttm-btn
+{
+    margin-top: 20px;
+}
+
+.portfolio-pic
+{
+    width: 40%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.pic 
+{
+    width: 60%;
+    background-color: #f5de89;
+    padding-top:20px ;
+    padding-left: 10px;
+    padding-right: 10px;
+   position: absolute;
+   z-index: 10;
+   border-radius: 10px;
+  
+
+}
+
+.pic > img 
+{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.bg 
+{
+    width: 60%;
+    height: 450px;
+    background-color: #e56f14;
+    transform: rotateZ(-45deg);
+    border-radius: 10px;
+   
+}
+
+/* navigation css  */
+
+.navigation
+{
+    width: 100%;
+    padding: 30px 12%;
+    /* background-color: yellow; */
+    position: absolute;
+    margin-top: -80px;
+}
+
+.nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.nav-item
+{
+    padding: 25px 0px;
+    width: 100px;
+    background-color: #2e2e2e;
+    font-size: 22px;
+    font-family: 'poppins';
+    color: white;
+    column-gap: 20px;
+    border-radius: 10px;
+    transition: .2s;
+    overflow: hidden;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav-item:hover
+{
+    width: 250px;
+}
+
+.nav-link
+{
+    width: 250px;
+    /* background-color: red; */
+    margin-left: 40px;
+}
+
+.nav-link > i{
+    display: inline-block;
+    color:  #e56f14;
+}
+
+.nav-link > p 
+{
+    display: inline-block;
+    margin-left: 60px;
+    transition: .3s;
+    /* display: none; */
+}
+
+.nav-item:hover .nav-link > p 
+{
+    margin-left: 10px;
+}
+
+
+/* content area css  */
+
+.content
+{
+    width: 100%;
+    
+    padding: 30px 12%;
+    background-color: #393838;
+    font-family: 'poppins';
+}
+
+.display-area
+{
+    width: 100%;
+    background-color: #2e2e2e;
+    margin-top: 70px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    
+}
+
+.about-me
+{
+    width: 100%;
+    padding: 10px 0px;
+    /* background-color: yellow; */
+    display: flex;
+    column-gap: 6%;
+    flex-wrap: wrap;
+    row-gap: 30px;
+   
+
+}
+
+.about 
+{
+    width: 47%;
+    padding: 20px;
+    color: white;
+    background-color: #1d1c1c;
+    border-radius: 10px;
+}
+
+.about > ul 
+{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+
+.skills 
+{
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+}
+
+.skills > li 
+{
+    padding: 10px;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+/* services css  */
+
+.services 
+{
+    width: 100%;
+    padding: 10px 0px;
+    /* background-color: yellow; */
+    display: flex;
+    column-gap: 4%;
+    flex-wrap: wrap;
+    row-gap: 40px;
+   
+}
+
+.service 
+{
+    width: 22%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #1d1c1c;
+}
+
+.service > h1 
+{
+    font-size: 22px;
+}
+
+.service > i 
+{
+    font-size: 100px;
+    align-self: center;
+    padding: 40px;
+}
+
+/* work css  */
+
+.works
+{
+    width: 100%;
+    padding: 10px 0px;
+    /* background-color: yellow; */
+    display: flex;
+    column-gap: 4%;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    
+}
+
+.work 
+{
+    width: 22%;
+    height: 300px;
+    background-color: red;
+    background-color: #1d1c1c;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.work-overlay
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(229, 111, 20, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 100%;
+    transition: .3s;
+    
+
+}
+
+.work:hover .work-overlay
+{
+    margin-top: 0px;
+}
+
+.work1 
+{
+    background-image: url('./images/work1.png');
+    
+}
+
+.work2
+{
+    background-image: url('./images/work2.png');
+   
+    
+}
+
+.work3
+{
+    background-image: url('./images/work3.webp');
+   
+    
+}
+
+.work4
+{
+    background-image: url('./images/work4.png');
+   
+    
+}
+
+.work5
+{
+    background-image: url('./images/work6.png');
+   
+    
+}
+
+/* hiding elemnts  */
+
+/* .about-section 
+{
+    display: none;
+} */
+
+.services-section 
+{
+    display: none;
+}
+
+.works-section
+{
+    display: none;
+}
+
+
+.active 
+{
+    background-color: #f5de89;
+    
+}

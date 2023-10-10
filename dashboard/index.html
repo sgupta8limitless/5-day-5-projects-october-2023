@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main class="main" id="main">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="logo">
+               <p>Dashboard</p>
+            </div>
+
+            <ul class="navigation">
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-solid fa-boxes-stacked"></i> Products</li>
+                <li><i class="fa-solid fa-user"></i> Customers</li>
+                <li><i class="fa-solid fa-chart-simple"></i> Stats</li>
+                <li><i class="fa-regular fa-user"></i> New Clients</li>
+                <li><i class="fa-solid fa-money-bill"></i> Refunds</li>
+            </ul>
+            
+
+        </div>
+
+
+
+        <div class="main-area" id="main-area">
+
+            <!-- header  -->
+
+            <header class="header">
+
+                <div class="intro">
+                    <h1>Welcome back, Saurabh</h1>
+                </div>
+
+                <div class="profile">
+                    <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg" alt="profile">
+                    <p>Saurabh</p>
+                    <p>Logout</p>
+                    <p><i id="light-mode" class="fa-solid fa-sun" style="color: yellow;" title="Switch To Light Mode"></i></p>
+                    <p style="display: none;"><i id="dark-mode" class="fa-solid fa-moon" style="color: darkgray" title="Switch To Night Mode"></i></p>
+                </div>
+
+            </header>
+
+
+            <!-- stats area  -->
+
+            <div class="stats">
+
+                <div class="stat box">
+
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> Total Sales
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 20,50000</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-up" style="color:green"></i> 20% More Than Last Month
+                    </p>
+
+                </div>
+
+                <div class="stat box">
+
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> Total Revenue
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 10,5000</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-up" style="color:green"></i> 10% More Than Last Month
+                    </p>
+
+                </div>
+
+                <div class="stat box">
+
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> New Customers Joined
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 3,010</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-down" style="color:red"></i> 50% Less Than Last Month
+                    </p>
+
+                </div>
+
+
+                <div class="stat box">
+
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> Old Client Funds
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 30,00000</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-up" style="color:green"></i> 10% More Than Last Month
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- chart area  -->
+
+            <div class="charts">
+                <div class="line-chart box">
+
+                    <canvas id="linechart"></canvas>
+
+                </div>
+
+                <div class="polar-area box">
+                    <canvas id="polararea"></canvas>
+                </div>
+
+                <div class="doughnut-chart box">
+                    <canvas id="doughnutchart"></canvas>
+                </div>
+            </div>
+
+
+            <!-- top products area  -->
+
+            <div class="products box">
+
+                <h1>Top Products This Month</h1>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Vendor</th>
+                            <th>Sales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Samsung Galaxy M51</td>
+                            <td>23000</td>
+                            <td>145</td>
+                            <td>Samsung</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Apple Iphone 14</td>
+                            <td>23000</td>
+                            <td>145</td>
+                            <td>Apple</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>LG HD OLED</td>
+                            <td>23000</td>
+                            <td>145</td>
+                            <td>LG</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>
+   
+    
+</body>
+</html>

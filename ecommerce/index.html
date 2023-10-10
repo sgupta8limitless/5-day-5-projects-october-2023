@@ -12,10 +12,11 @@
 
     <!-- header section  -->
 
-    <header class="header">
+    <header class="header" id="header">
         
         <div class="logo">
             <p>SHOP360</p>
+            <i class="fa-solid fa-bars menu" id="menu"></i>
         </div>
 
         <nav class="navigation">
@@ -554,6 +555,26 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
+
+        let headerVisible = false;
+        document.getElementById("menu").addEventListener("click",function(){
+
+            if(headerVisible===false)
+            {
+                document.getElementById("header").style.height="270px";
+                headerVisible=true;
+            }
+            else 
+            {
+                document.getElementById("header").style.height="50px";
+                headerVisible=false;
+            }
+               
+
+        })
+
+
     </script>
 
 </body>

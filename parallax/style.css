@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main
+{
+    width: 100%;
+    
+}
+
+.videobg 
+{
+    width: 100%;
+    height: 95vh;
+    background-color: gray;
+    position: relative;
+}
+
+.video-holder
+{
+    width: 100%;
+    height: 95vh;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+#vid 
+{
+    z-index: 50;
+}
+
+.overlay 
+{
+    width: 100%;
+    height: 95vh;
+    background:linear-gradient(to bottom,black,transparent,black);
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    padding: 100px;
+    z-index: 100;
+}
+
+.details 
+{
+    width: 40%;
+    padding: 30px 20px;
+    /* background-color: white; */
+    font-family: 'poppins';
+    color: white;
+}
+
+.details > h1 
+{
+    font-size: 50px;
+}
+
+.section 
+{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    top: 0;
+    z-index: 200;
+}
+
+.imgbg
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+}
+
+.section-overlay 
+{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to bottom,black,transparent,black);
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 100px;
+}
+
+.section-details 
+{
+    width: 40%;
+    padding: 30px;
+    /* background-color: white; */
+    font-family: 'poppins';
+    color: white;
+
+}
+
+.section-img 
+{
+    width: 110%;
+}
+
+.section-details > h1 
+{
+    font-size: 70px;
+}
+
+.section-details > h2
+{
+    font-size: 30px;
+    color: #543eae;
+}
+
+.section-details > p 
+{
+    font-size: 30px;
+}
+
+.thanos-overlay 
+{
+    justify-content: flex-start;
+}
